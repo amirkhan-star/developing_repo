@@ -11,6 +11,7 @@ def xml_to_excel(xml_path, excel_path):
     tree = ET.parse(xml_path)
     root = tree.getroot()
     data = []
+    
     for item in root.findall('.//item'): 
         row = {child.tag: child.text for child in item}
         data.append(row)
