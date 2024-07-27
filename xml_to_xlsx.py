@@ -5,7 +5,7 @@ bucket_names = 'newbucket'#Enter your bucket which you want to arcive files
 import os
 import pandas as pd 
 import xml.etree.ElementTree as ET
-local_dir = '/home/ubuntu/xml_file_paths/valid_excel_files'
+local_dir = '/home/ubuntu/Desktop/dirforminIO'
 
 def xml_to_excel(xml_path, excel_path):
     tree = ET.parse(xml_path)
