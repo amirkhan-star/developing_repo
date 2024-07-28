@@ -27,5 +27,4 @@ def convert_all_xml_in_directory(directory_path):
             xml_to_excel(xml_path, excel_path)
             os.remove(xml_path)
 
-
 convert_all_xml_in_directory(local_dir)
