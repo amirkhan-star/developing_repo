@@ -1,6 +1,6 @@
 #please enter your credentials
-MINIO_user_name = 'minioadmin'#Enter minIO username
-MINIO_password = 'minioadmin'#Enter minIO password 
+MINIO_user_name = 'AMIRKHAN'#Enter minIO username
+MINIO_password = 'amirkhan13'#Enter minIO password 
 bucket_names = 'newbucket'#Enter your bucket which you want to arcive files
 
 import os
@@ -26,5 +26,6 @@ def convert_all_xml_in_directory(directory_path):
             excel_path = os.path.join(directory_path, filename.replace('.xml', '.xlsx'))
             xml_to_excel(xml_path, excel_path)
             os.remove(xml_path)
+
 
 convert_all_xml_in_directory(local_dir)
